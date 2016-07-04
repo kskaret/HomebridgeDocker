@@ -6,8 +6,6 @@ RUN npm install -g homebridge
 
 EXPOSE 5353 51826
 
-USER root
-
 RUN mkdir /root/.homebridge
 ADD config.json /root/.homebridge/config.json
 
