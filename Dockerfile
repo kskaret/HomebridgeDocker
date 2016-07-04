@@ -1,7 +1,7 @@
-FROM node:4
+FROM node:6.2.2
 MAINTAINER Kristoffer Skaret
 
-RUN apt-get update && yes | apt-get install libnss-mdns libavahi-compat-libdnssd-dev
+RUN apt-get update && yes | apt-get install libavahi-compat-libdnssd-dev
 RUN npm install -g homebridge
 
 EXPOSE 5353 51826
