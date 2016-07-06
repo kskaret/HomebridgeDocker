@@ -23,6 +23,9 @@ RUN yes | apt-get install telldus-core
 # Install homebridge td-tools
 RUN npm install -g homebridge-telldus-tdtool
 
+# Add the tellstick configuration
+ADD tellstick.conf /etc/tellstick.conf
+
 ADD run.sh /root/run.sh
 RUN chmod +x /root/run.sh
 
