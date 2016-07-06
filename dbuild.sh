@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build -t krishtoffer/homebridge .
+sudo docker build -t krishtoffer/homebridge .
