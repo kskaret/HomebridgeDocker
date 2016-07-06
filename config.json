@@ -9,7 +9,10 @@
     "description": "Homebridge running om Docker",
 
     "platforms": [
-
+        {
+            "platform" : "Telldus-TD-Tool",
+            "name" : "Telldus-TD-Tool"
+        }
     ],
 
     "accessories": [

@@ -20,6 +20,9 @@ RUN apt-get update
 # Install Telldus
 RUN yes | apt-get install telldus-core
 
+# Install homebridge td-tools
+RUN npm install -g homebridge-telldus-tdtool
+
 ADD run.sh /root/run.sh
 RUN chmod +x /root/run.sh
 
